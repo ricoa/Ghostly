@@ -46,6 +46,12 @@ the {{{body}}} of the default.hbs template, containing the blog header/footer. -
             {{/if}}
 
             <section class="author">
+                <h4>版权声明</h4>
+                <p>转载请注明作者和文章出处</p>
+                <p>作者:{{name}}</p>
+                {{#post}}
+                <p>首发于:{{url}}</p>
+                {{/post}
                 <h4><a href="{{url}}">{{name}}</a></h4>
 
                 {{#if bio}}
